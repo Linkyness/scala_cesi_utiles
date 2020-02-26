@@ -1,0 +1,35 @@
+
+plugins {
+    id 'scala'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+}
+
+group 'cesi_utiles'
+version '0.1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.scala-lang:scala-library:2.13.1'
+    implementation 'org.scalafx:scalafx_2.13:12.0.2-R18'
+    implementation 'com.typesafe:config:1.4.0'
+
+    testImplementation 'org.scalatest:scalatest_2.13:3.1.1'
+    testImplementation 'junit:junit:4.13'
+    testImplementation 'org.scalatestplus:scalatestplus-junit_2.13:1.0.0-M2'
+}
+
+def mainClassName = 'cesi_utiles.CesiUtiles'
+
+jar {
+    manifest.attributes 'Main-Class': mainClassName
+    from configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+}
+
+task run(type: JavaExec, dependsOn: classes) {
+    main = mainClassName
+    classpath sourceSets.main.runtimeClasspath
+    classpath configurations.runtime
+}

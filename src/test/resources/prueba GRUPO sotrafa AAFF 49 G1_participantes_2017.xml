@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<grupos xmlns="http://www.fundaciontripartita.es/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<grupo>
+<idAccion>00049</idAccion>
+<idGrupo>01</idGrupo>
+<participantes>
+<participante>
+<nif>54098145Y</nif>
+<N_TIPO_DOCUMENTO>10</N_TIPO_DOCUMENTO>
+<nombre>FRANCISCO JOSÉ</nombre>
+<primerApellido>VILLEGAS</primerApellido>
+<segundoApellido>BRAVO</segundoApellido>
+<niss>041010621815</niss>
+<cifEmpresa>A28705846</cifEmpresa>
+<ctaCotizacion>04002865046</ctaCotizacion>
+<fechaNacimiento>24/01/1985</fechaNacimiento>
+<email>info@sotrafa.com</email>
+<telefono>950405600</telefono>
+<sexo>M</sexo>
+<discapacidad>false</discapacidad>
+<afectadosTerrorismo>false</afectadosTerrorismo>
+<afectadosViolenciaGenero>false</afectadosViolenciaGenero>
+<categoriaprofesional>4</categoriaprofesional>
+<grupocotizacion>8</grupocotizacion>
+<nivelestudios>3</nivelestudios>
+</participante>
+</participantes>
+<costes>
+<coste>
+<cifagrupada>A28705846</cifagrupada>
+<directos>100.00</directos>
+<indirectos>0</indirectos>
+<salariales>0</salariales>
+<periodos>
+<periodo>
+<mes>12</mes>
+<importe>0</importe>
+</periodo>
+</periodos>
+</coste>
+</costes>
+</grupo>
+</grupos>
